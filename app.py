@@ -25,4 +25,8 @@ with st.container():
         prediction = pipeline.predict([preprocessed_text])
         result = "Spam" if prediction == 1 else "Not Spam"
         st.markdown(f"<h2 style='text-align: center; color: {'#FF4B4B' if prediction == 1 else '#4B8BFF'};'>Prediction: {result}</h2>", unsafe_allow_html=True)
+        
+st.markdown("---")
+st.markdown("<h3 style='text-align: center; color: #000;'>For any feedback or questions, please contact:</h3>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Email: your.email@example.com</p>", unsafe_allow_html=True)
 
