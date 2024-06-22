@@ -4,7 +4,7 @@ import streamlit as st
 import joblib
 
 # Load the trained pipeline
-pipeline = joblib.load('C:/Users/DELL/ml/spam_classifier_pipeline.pkl')
+pipeline = joblib.load('spam_classifier_pipeline.pkl')
 
 # Preprocess function
 def preprocess_text(text):
